@@ -1,1 +1,121 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
+.about__pre-title {
+  font-family: 'Titan One', monospace;
+  @include font(400, 18px, 1.17, null);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--color-text-pink);
+
+  margin-bottom: 15px;
+}
+.about__title {
+  font-family: 'Titan One', monospace;
+  @include font(400, 34px, 1.15, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--color-text-red);
+
+  margin-bottom: 148px;
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 140px;
+}
+
+.about__item {
+  position: relative;
+  padding: 160px 40px 40px;
+
+  text-align: center;
+  border-radius: 24px;
+  background: var(--color-text-pink);
+
+  &:nth-child(2) {
+    background: #f0d1a5;
+  }
+
+  &:nth-child(3) {
+    background: #c2e297;
+  }
+}
+
+.about__item::before {
+  position: absolute;
+  content: '';
+  width: 280px;
+  height: 280px;
+  top: -140px;
+  left: 0;
+
+  background-repeat: no-repeat;
+}
+
+.about__item:nth-child(1):before {
+  background-image: url(../images/products/products-cone-mob-x1.png);
+}
+
+.about__item:nth-child(2):before {
+  background-image: url(../images/products/products-coffee-mob-x1.png);
+}
+
+.about__item:nth-child(3):before {
+  background-image: url(../images/products/products-milkshake-mob-x1.png);
+}
+
+.about__content {
+}
+
+.about__name {
+  position: relative;
+  margin-bottom: 70px;
+
+  font-family: 'Titan One', monospace;
+  @include font(400, 20px, 1.15, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--color-text-white);
+}
+
+.about__name::after {
+  position: absolute;
+  content: '';
+  width: 26px;
+  height: 6px;
+  top: 55px;
+  left: 43%;
+
+  background-image: url(../images/products/dots-x1.png);
+}
+
+.about__description {
+  @include font(700, 14px, 1.52, 0.04em);
+  text-align: center;
+
+  color: var(--color-text-white);
+
+  margin-bottom: 32px;
+}
+
+.about__btn {
+  margin: 0 auto;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  border-color: rgba($color: #fff, $alpha: 0);
+}
+
+.about__icon {
+  fill: var(--color-text-red);
+}
