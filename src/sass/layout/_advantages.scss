@@ -1,6 +1,7 @@
 .advantages {
     background-color: var(--color-background);
     padding-bottom: 60px;
+    padding-top: 60px;
 
 }
 
@@ -16,7 +17,7 @@ font-family: 'Titan One';
 text-transform: uppercase;
 height:56px;
 color: var(--color-text-red);
-@include font(null, 36px, 1.139, 0.04em);
+@include font(400, 36px, 1.139, 0.04em);
 margin-top: 16px;
 @include tablet {
     @include font(null, 48px, 1.146, 0.04em);
@@ -32,11 +33,11 @@ margin-top: 16px;
     @include font(700, null, 1.7, null);
     @include tablet {
         margin-top: 14px;
-    @include font(700, 14px, 1.74, null);
+    @include font(null, 14px, 1.74, null);
     }
     @include desktop {
         margin-top: 16px;
-        @include font(700, 16px, 1.76, 0.02em);
+        @include font(null, 16px, 1.76, 0.02em);
         }
     }
 
