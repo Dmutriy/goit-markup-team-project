@@ -5,29 +5,62 @@
 
 .products__pre-title {
   font-family: 'Titan One', monospace;
-  @include font(400, 18px, 1.17, null);
   text-align: center;
   text-transform: uppercase;
 
   color: var(--color-text-pink);
 
   margin-bottom: 15px;
+  @include font(400, 18px, 1.17, null);
+
+  @include tablet {
+    @include font(400, 26px, 1.15, null);
+
+    margin-bottom: 18px;
+  }
+
+  @include desktop {
+    @include font(400, 30px, 1.13, 0.04em);
+
+    margin-bottom: 16px;
+  }
 }
 .products__title {
   font-family: 'Titan One', monospace;
-  @include font(400, 34px, 1.15, 0.04em);
   text-align: center;
   text-transform: uppercase;
 
   color: var(--color-text-red);
 
   margin-bottom: 148px;
+  @include font(400, 34px, 1.15, 0.04em);
+
+  @include tablet {
+    @include font(400, 48px, 1.145, 0.04em);
+
+    margin-bottom: 158px;
+  }
+
+  @include desktop {
+    @include font(400, 58px, 1.14, 0.06em);
+
+    margin-bottom: 281px;
+  }
 }
 
 .products__list {
   display: flex;
   flex-wrap: wrap;
   gap: 140px;
+
+  @include tablet {
+    gap: 16px;
+  }
+
+  @include desktop {
+    gap: 32px;
+    flex-wrap: nowrap;
+  }
 }
 
 .products__item {
@@ -45,6 +78,16 @@
   &:nth-child(3) {
     background: #c2e297;
   }
+
+  @include tablet {
+    width: calc((100% - 32px) / 3);
+    padding: 118px 32px 32px;
+  }
+
+  @include desktop {
+    padding-top: 165px;
+    min-width: 368px;
+  }
 }
 
 .products__item::before {
@@ -54,21 +97,59 @@
   height: 280px;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -55%);
+  transform: translate(-50%, -50%);
 
   background-repeat: no-repeat;
+
+  @include tablet {
+    width: 224px;
+    height: 224px;
+
+    transform: translate(-50%, -60%);
+  }
+
+  @include desktop {
+    width: 368px;
+    height: 394px;
+
+    transform: translate(-50%, -65%);
+  }
 }
 
 .products__item:nth-child(1):before {
   background-image: url(../images/products/products-cone-mob-x1.png);
+
+  @include tablet {
+    background-image: url(../images/products/products-cone-tab-x1.png);
+  }
+
+  @include desktop {
+    background-image: url(../images/products/products-cone-x1.png);
+  }
 }
 
 .products__item:nth-child(2):before {
   background-image: url(../images/products/products-coffee-mob-x1.png);
+
+  @include tablet {
+    background-image: url(../images/products/products-coffee-tab-x1.png);
+  }
+
+  @include desktop {
+    background-image: url(../images/products/products-coffee-x1.png);
+  }
 }
 
 .products__item:nth-child(3):before {
   background-image: url(../images/products/products-milkshake-mob-x1.png);
+
+  @include tablet {
+    background-image: url(../images/products/products-milkshake-tab-x1.png);
+  }
+
+  @include desktop {
+    background-image: url(../images/products/products-milkshake-x1.png);
+  }
 }
 
 .products__content {
@@ -79,11 +160,15 @@
   margin-bottom: 70px;
 
   font-family: 'Titan One', monospace;
-  @include font(400, 20px, 1.15, 0.04em);
   text-align: center;
   text-transform: uppercase;
 
   color: var(--color-text-white);
+  @include font(400, 20px, 1.15, 0.04em);
+
+  @include desktop {
+    @include font(400, 30px, 1.13, 0.04em);
+  }
 }
 
 .products__name::after {
@@ -96,15 +181,29 @@
   transform: translate(-50%);
 
   background-image: url(../images/products/dots-x1.png);
+
+  @include desktop {
+    top: 65px;
+  }
 }
 
 .products__description {
-  @include font(700, 14px, 1.52, 0.04em);
   text-align: center;
 
   color: var(--color-text-white);
 
   margin-bottom: 32px;
+  @include font(700, 14px, 1.52, 0.04em);
+
+  @include tablet {
+    line-height: 1.76;
+  }
+
+  @include desktop {
+    font-size: 16px;
+
+    margin-bottom: 60px;
+  }
 }
 
 .products__btn {
