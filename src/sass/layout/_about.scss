@@ -3,10 +3,12 @@
     padding-bottom: 15px;
     background: #FFF5F6;
 
-    .container {
-        display: flex;
-    }
+}
 
+.about-production {
+    @include desktop {
+        margin-top: 90px;
+    }
 }
 
 .about-list {
@@ -21,6 +23,27 @@
     }
 }
 
+
+.about-content {
+    margin-top: 60px;
+
+    @include tablet {
+        display: flex;
+    }
+}
+
+.about-content_item {
+    @include tablet {
+        width: 336px;
+        height: 335px;
+    }
+
+    @include desktop {
+        width: 501px;
+        height: 501px;
+    }
+}
+
 .top-text {
     font-family: 'Titan One';
     font-style: normal;
@@ -28,6 +51,10 @@
     text-align: center;
     text-transform: uppercase;
 
+}
+
+.about-production--top-text {
+    margin-bottom: 40px;
 }
 
 .about-content__top-text {
@@ -69,26 +96,11 @@
 
 }
 
-.about-production {
-    background-image: url(../images/about/about-milk-mob-x1.png);
-    background-repeat: no-repeat;
-    position: relative;
-    min-width: 280px;
-    min-height: 100%;
-    top: 0;
-    left: 0;
-
-    @include tablet {}
-
-    @include desktop {}
-
-}
 
 .content-text {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
-    margin-bottom: 40px;
 }
 
 .about-production__top-text {
@@ -96,6 +108,7 @@
     font-size: 12px;
     line-height: 1.58;
     color: #000000;
+    ;
 
     @include tablet {
         font-size: 14px;
@@ -115,6 +128,11 @@
     font-size: 12px;
     line-height: 1.62;
     color: #907E82;
+    background-image: url(../images/about/about-milk-mob-x1.png);
+    background-repeat: no-repeat;
+    position: relative;
+    min-width: 280px;
+    min-height: 133px;
 
     @include tablet {
         font-size: 14px;
@@ -128,12 +146,12 @@
 }
 
 .about-production__btn {
+    margin-top: 20px;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 56px;
     padding-left: 37px;
-    margin: auto;
     min-width: 176px;
     min-height: 44px;
     font-family: 'DM Sans';
@@ -144,7 +162,7 @@
     display: flex;
     text-align: center;
     color: #D41443;
-    ;
+    margin-left: 0;
     background: #FFFFFF;
     border-radius: 22px;
     border-color: transparent;
@@ -157,9 +175,9 @@
         background-color: #ECEBEB;
         border: transparent;
     }
+
 }
 
-.production-btn {}
 
 .production-button-icon {
     align-items: center;
