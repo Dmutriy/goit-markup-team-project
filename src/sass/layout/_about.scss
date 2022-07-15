@@ -25,10 +25,27 @@
 
 
 .about-content {
-    margin-top: 60px;
+    margin-top: 30px;
 
-    @include tablet {
+    @media screen and (max-width:767px) {
+        background-image: url(../images/about/about-milk-mob-x1.png);
+        background-repeat: no-repeat;
+        background-position: 30% 90%;
+        background-size: contain;
+
+    }
+
+    @media screen and (min-width:768px) {
         display: flex;
+        max-width: 100%;
+        margin-top: 60px;
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width: 1200px;
+        min-height: 100%;
+        background-image: url(../images/about/about-milk-x1.png);
+        background-size: contain;
     }
 }
 
@@ -108,7 +125,7 @@
     font-size: 12px;
     line-height: 1.58;
     color: #000000;
-    ;
+
 
     @include tablet {
         font-size: 14px;
@@ -128,11 +145,6 @@
     font-size: 12px;
     line-height: 1.62;
     color: #907E82;
-    background-image: url(../images/about/about-milk-mob-x1.png);
-    background-repeat: no-repeat;
-    position: relative;
-    min-width: 280px;
-    min-height: 133px;
 
     @include tablet {
         font-size: 14px;
@@ -148,8 +160,6 @@
 .about-production__btn {
     margin-top: 20px;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
     padding-right: 56px;
     padding-left: 37px;
     min-width: 176px;
@@ -176,11 +186,9 @@
         border: transparent;
     }
 
-}
-
-
-.production-button-icon {
-    align-items: center;
+    @include tablet {
+        margin-top: 40px;
+    }
 }
 
 .list {
