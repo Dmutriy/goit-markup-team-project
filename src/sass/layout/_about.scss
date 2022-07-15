@@ -33,6 +33,12 @@
         background-position: 30% 90%;
         background-size: contain;
 
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+            background-image: url(../images/about/about-milk-mob-x2.png);
+        }
     }
 
     @media screen and (min-width:768px) {
@@ -46,6 +52,13 @@
         min-height: 100%;
         background-image: url(../images/about/about-milk-x1.png);
         background-size: contain;
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+            background-image: url(../images/about/about-milk-x2.png);
+        }
     }
 }
 
@@ -193,4 +206,12 @@
 
 .list {
     list-style: none;
+}
+
+.production-btn {
+    margin-left: 12px;
+}
+
+.production-button-icon {
+    margin-inline: inherit;
 }
