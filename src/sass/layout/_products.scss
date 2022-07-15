@@ -52,8 +52,9 @@
   content: '';
   width: 280px;
   height: 280px;
-  top: -140px;
-  left: 0;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -55%);
 
   background-repeat: no-repeat;
 }
@@ -91,7 +92,8 @@
   width: 26px;
   height: 6px;
   top: 55px;
-  left: 43%;
+  left: 50%;
+  transform: translate(-50%);
 
   background-image: url(../images/products/dots-x1.png);
 }
