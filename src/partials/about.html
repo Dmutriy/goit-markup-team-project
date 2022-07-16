@@ -1,3 +1,45 @@
-<section>
-  <h2>About</h2>
+<section class="about" lang="uk">
+  <div class="container">
+    <p class="about-content__top-text top-text">
+      tradition and love</p>
+    <h2 class="about-content__title top-text">
+      how it’s made?</h2>
+    <div class="about-content">
+      <ul class="about-content_list about-list list">
+        <li class="about-content_item">
+          <picture>
+            <source srcset="
+                    ./images/about/about-cow-x1.png 1x,
+                    ./images/about/about-cow-x2.png 2x" media="(min-width:1200px)" />
+            <source srcset="
+                    ./images/about/about-cow-tab-x1.png 1x,
+                    ./images/about/about-cow-tab-x2.png 2x" media="(min-width:768px)" />
+            <source srcset="
+                   ./images/about/about-cow-mob-x1.png 1x,
+                   ./images/about/about-cow-mob-x2.png 2x" media="(min-width:460px)" />
+            <img src="./images/about/about-cow-x1.png" alt="Корова з молоком" width="501" height="501">
+          </picture>
+        </li>
+      </ul>
+      <div class="about-production">
+        <p class="about-production__top-text about-production--top-text content-text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas
+          eros.
+          Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about-production__text content-text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet
+          placerat.
+          Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+          <br></br>
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button type="button" class="about-production__btn production-btn">Read more
+          <svg class="production-button-icon" width="10" height="15">
+            <use href="./images/icons.svg#icon-Vector-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
 </section>
