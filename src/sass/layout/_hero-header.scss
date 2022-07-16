@@ -1,6 +1,6 @@
+// Header
+
 .header {
-    width: 100vw;
-    background-color: pink;
     padding-top: 8px;
 
     @include tablet {
@@ -79,3 +79,7 @@
 .current {
     color: var(--color-text-red);
 }
+
+// Hero
+
+
