@@ -1,3 +1,49 @@
-<header>
-  <h1>Hero header</h1>
+<header class="header container">
+  <div class="header__wrap">
+    <nav class="nav">
+      <a href="./index.html">
+        <picture>
+          <source srcset="
+                                    /src/images/hero/ice-logo.png  1x,
+                                    /src/images/hero/ice-logo-2.png 2x " media="(min-width: 320px)" />
+          <img src="/src/images/hero/ice-logo.png" width="199" height="50" alt="logo" />
+        </picture>
+      </a>
+
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#home" class="nav__link current">Home</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#advantages" class="nav__link">About us</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#about" class="nav__link">How it’s made?</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#products" class="nav__link">Our products</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="menu-open-btn">
+      <svg width="20" height="12">
+        <use href="/src/images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <button type="button" class="header__btn">
+      Buy now
+      <svg width="4" height="8">
+        <use href="/src/images/icons.svg#icon-button-mark"></use>
+      </svg>
+    </button>
+  </div>
 </header>
