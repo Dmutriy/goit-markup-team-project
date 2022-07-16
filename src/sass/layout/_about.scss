@@ -217,13 +217,10 @@
 
 }
 
-.modal.active,
-.overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
 
 .modal {
+    min-height: 500px;
+    width: 300px;
     position: absolute;
     background: #FFB8CA;
 
@@ -234,7 +231,7 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border-radius: 20px;
     transition: transform 300ms;
 
     .backdrop.is-hidden & {
@@ -242,28 +239,36 @@
     }
 
 
+
     @media screen and (min-width: 768px) {
         width: 450px;
-        height: 609px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 528px;
-        height: 581px;
     }
 }
 
 .modal-title {
-    margin-bottom: 20px;
-    padding-top: 20px;
-
     font-family: 'Titan One';
-    font-size: 30px;
-    line-height: 1.133;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.166;
+
     text-align: center;
+    text-transform: uppercase;
     color: #D41443;
+
+    @include tablet {
+        font-size: 26px;
+        line-height: 1.15;
+
+    }
+
+    @include desktop {
+        font-size: 30px;
+        line-height: 1.133;
+        letter-spacing: 0.04em;
+    }
 }
 
 .modal-text {
@@ -271,17 +276,27 @@
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
-
-    font-size: 14px;
-    line-height: 1.94;
-    letter-spacing: 0.04em;
+    font-size: 12px;
+    line-height: 1.58;
     color: #000000;
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.78;
+
+        letter-spacing: 0.04em;
+    }
+
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.94;
+    }
 }
 
 .modal-close-btn {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: transparent;
     top: 10px;
@@ -293,6 +308,12 @@
     align-items: center;
     justify-content: center;
     padding: 0;
+
+    @include tablet {
+        width: 30px;
+        height: 30px;
+    }
+
 }
 
 .close-icon {
@@ -313,4 +334,71 @@
 
 .no-scroll {
     overflow: hidden;
+}
+
+.btn-submit {
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    min-width: 176px;
+    min-height: 44px;
+    bottom: 20%;
+    top: 90%;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    border-radius: 22px;
+    border-color: transparent;
+    color: #d41443;
+
+    text-align: center;
+
+
+
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #ecebeb;
+        border: transparent;
+    }
+
+
+    @media screen and (min-width:1200px) {}
+
+}
+
+.form {
+    display: block;
+    width: 100%;
+    padding: 40px;
+
+}
+
+.modal-text {
+    padding: 12px 16px;
+
+    border-radius: 6px;
+    resize: none;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        border: 1px solid #D41443;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+    }
 }
