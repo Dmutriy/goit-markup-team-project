@@ -8,12 +8,16 @@
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   @include tablet {
-    margin-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   @include desktop{
-    margin-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .slick-initialized .slick-slide {
