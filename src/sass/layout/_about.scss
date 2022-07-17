@@ -27,6 +27,8 @@
       background-image: url(../images/about/about-milk-x2.png);
     }
   }
+  & > .container {
+  }
 }
 
 // .about {
@@ -227,7 +229,7 @@
   &:hover,
   &:focus {
     background-color: #ecebeb;
-    border: transparent;
+    // border: transparent;
   }
 
   @include tablet {
