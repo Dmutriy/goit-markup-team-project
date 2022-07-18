@@ -1,0 +1,198 @@
+.contacts-section {
+  padding-top: 30px;
+  background: linear-gradient(
+    var(--color-text-white) 0%,
+    var(--color-text-white) 20%,
+    var(--color-background) 20%,
+    var(--color-background) 100%
+  );
+  @include tablet {
+    padding-top: 60px;
+  }
+}
+.contacts-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+  @include tablet {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+}
+
+.cafe {
+  display: inline-block;
+  padding: 0 20px;
+  @include font(500, 12px, 1.83, 00.04em);
+  font-family: 'DM Sans';
+  margin-bottom: 20px;
+  color: var(--color-text-white);
+  background: #f0d1a5;
+  border-radius: 4px;
+  @include tablet {
+    @include font(500, 16px, 1.88, 00.04em);
+    margin-bottom: 32px;
+  }
+}
+.cafe-background {
+  background: #c2e297;
+}
+
+.contacts-card__item {
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid rgba(225, 225, 225, 1);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.089));
+  padding: 40px 32px;
+  background: var(--color-text-white);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation: flip-scale-down-ver 0.5s linear both;
+  @include tablet {
+    @include font(500, 14px, 1.85, 00.04em);
+    max-width: calc((100% - 64px) / 3);
+  }
+  @include desktop {
+    @include font(500, 16px, 1.88, 00.04em);
+    padding: 40px;
+  }
+}
+.contacts-card__item:focus,
+.contacts-card__item:hover {
+  transform: scale(1.2);
+}
+.card__title {
+  // @include font (500, 12px, 1.83, 0000.04em );
+  // font-family: 'DM Sans';
+  // font-style: normal;
+  // color: var(--color-text-primary);
+  // // font-weight: 500;
+  // // font-size: 12px;
+  // // line-height: 186%;
+  margin-bottom: 8px;
+  @include tablet {
+    margin-bottom: 12px;
+  }
+  @include desktop {
+    margin-bottom: 8px;
+  }
+}
+.card__text {
+  @include font(500, 12px, 1.5, 00.03em);
+  font-family: 'DM Sans';
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+  padding-right: 30px;
+  @include tablet {
+    @include font(500, 14px, 1.6, 00.04em);
+    padding-right: 0;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+  }
+  @include desktop {
+    @include font(500, 16px, 1.81, 00.04em);
+  }
+}
+.card__list {
+  margin-bottom: 8px;
+  @include tablet {
+    margin-bottom: 12px;
+  }
+}
+.card__item,
+.card__title {
+  @include font(500, 12px, 1.83, 00.04em);
+  font-family: 'DM Sans';
+  color: var(--color-text-primary);
+  @include tablet {
+    @include font(500, 14px, 1.86, 00.04em);
+  }
+  @include desktop {
+    @include font(500, 16px, 1.88, 00.04em);
+  }
+}
+.card__item-time {
+  @include font(500, 12px, 1.833, 00.04em);
+  font-family: 'DM Sans';
+  color: var(--color-text-pink);
+}
+.card-contat__list {
+  margin-top: 23px;
+  padding-top: 23px;
+  border-top: 1px solid #e1e1e1;
+  @include tablet {
+    margin-top: 32px;
+    padding-top: 32px;
+  }
+}
+.card-contact__link {
+  @include font(500, 12px, 1.5, 00.04em);
+  font-family: 'DM Sans';
+  color: var(--color-text-secondary);
+  @include tablet {
+    @include font(500, 14px, 1.86, 00.04em);
+  }
+  @include desktop {
+    @include font(500, 16px, 1.8, 00.04em);
+  }
+}
+.card-contact__link:hover,
+.card-contact__link:focus {
+  color: var(--color-text-red);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-button {
+  @include font(700, 16px, 1.31, 000.04em);
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-button__pink {
+  color: var(--color-text-white);
+  background: var(--color-text-red);
+  padding: 12px 25px;
+}
+.contacts-button__white {
+  color: var(--color-text-red);
+  background: var(--color-text-white);
+  padding: 12px 40px;
+}
+.contacts-button__vector-white {
+  margin-left: 10px;
+}
+.contacts-button__vector-pink {
+  margin-left: 10px;
+}
+.contacts-button__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+  }
+}
+.contacts-button__pink:hover,
+.contacts-button__pink:focus {
+  background: var(--color-text-white);
+  color: var(--color-text-red);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-button__white:hover,
+.contacts-button__white:focus {
+  color: var(--color-text-white);
+  background: var(--color-text-red);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
