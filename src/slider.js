@@ -4,7 +4,7 @@ $('.slider').slick({
   autoplay: true,
   adaptiveHeight: true,
   autoplaySpeed: 35000000,
-  arrows:false,
-  dots:true,
-  centerMode:false,
+  arrows: false,
+  dots: true,
+  centerMode: false,
 });
