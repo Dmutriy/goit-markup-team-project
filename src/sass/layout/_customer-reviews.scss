@@ -1,6 +1,5 @@
-
 /* Слайдер */
-.slick-slider{
+.slick-slider {
   display: flex;
   min-width: 0;
   flex-wrap: nowrap;
@@ -15,7 +14,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  @include desktop{
+  @include desktop {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -31,45 +30,43 @@
 .slick-list {
   width: 100%;
 }
-.slider__imeg{
+.slider__imeg {
   margin-bottom: 32px;
-  @include tablet{
+  @include tablet {
     margin-bottom: 20px;
   }
-  @include desktop{
+  @include desktop {
     margin-bottom: 16px;
   }
 }
 
-
-.slider__text-wraper{
-  background: #FAFAFA;
+.slider__text-wraper {
+  background: #fafafa;
   max-width: 280px;
-  margin:0 20px 16px 20px;
+  margin: 0 20px 16px 20px;
   position: relative;
   border-radius: 20px;
   @include tablet {
     max-width: 620px;
-    margin:0 74px 4px 74px;
+    margin: 0 74px 4px 74px;
   }
   @include desktop {
     max-width: 968px;
-    margin:0 116px 16px 116px;
+    margin: 0 116px 16px 116px;
   }
 }
 
-
-.slider__text::before{
+.slider__text::before {
   position: absolute;
   top: 22px;
   left: 54px;
   content: url(../images/quotes.svg);
-  opacity: .4;
-  @include tablet{
+  opacity: 0.4;
+  @include tablet {
     top: 19px;
     left: 5px;
   }
-  @include desktop{
+  @include desktop {
     top: 23px;
     left: 79px;
   }
@@ -87,12 +84,12 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: #000000;
-  @include tablet{
+  @include tablet {
     padding: 37px 55px 44px 51px;
     font-size: 14px;
     line-height: 2.14;
   }
-  @include desktop{
+  @include desktop {
     padding: 47px 109px 39px;
     font-size: 16px;
     line-height: 1.87;
@@ -101,7 +98,11 @@
 
 .slider__decoration-text {
   width: calc(100% - 100px);
-  background: repeating-linear-gradient(#e1e1e1 1px,#00000000 3px,#00000000 32px);
+  background: repeating-linear-gradient(
+    #e1e1e1 1px,
+    #00000000 3px,
+    #00000000 32px
+  );
   margin: 0 auto;
   position: absolute;
   top: 66px;
@@ -116,23 +117,22 @@
   @include desktop {
     width: calc(94% - 100px);
     top: 73px;
-
   }
 }
-.slider__decoration-wraper{
+.slider__decoration-wraper {
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
 }
 .slider__decoration-item {
   margin-right: 10px;
-  content: "";
+  content: '';
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #C7133E;
+  background: #c7133e;
 }
-.slider__decoration-item:last-child{
+.slider__decoration-item:last-child {
   margin-right: 0;
 }
 .slider__text-city {
@@ -145,43 +145,44 @@
   line-height: 1.85;
   text-align: center;
   color: #000000;
-  @include tablet{
+  @include tablet {
     font-size: 16px;
     line-height: 1.87;
   }
-  @include desktop{
+  @include desktop {
     margin-bottom: 32px;
     font-size: 20px;
     line-height: 1.9;
   }
 }
 /* Точки (булиты) */
-.slick-dots{
+.slick-dots {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-.slick-dots li{
+.slick-dots li {
   list-style: none;
   margin-right: 18px;
 }
-.slick-dots li:last-child{
+.slick-dots li:last-child {
   margin-right: 0;
 }
 /* Элемент точки */
- .slick-dots li button{
+.slick-dots li button {
   font-size: 0;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   border: none;
 }
 /* Активная точка */
-.slick-dots li.slick-active button{
-background-image: url("../images/icon-house.svg");
-background-repeat: no-repeat;
-background-size: contain;
-background-color: #fff;
+.slick-dots li.slick-active button {
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/icon-house.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--color-background);
 }
