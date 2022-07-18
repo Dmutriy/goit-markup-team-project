@@ -138,6 +138,14 @@
     font-size: 12px;
     line-height: 186%;
     color: var(--color-text-red);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
     @include tablet {
         font-size: 14px;
     }
