@@ -186,7 +186,6 @@
 }
 .contacts-button__white:hover,
 .contacts-button__white:focus {
-  color: var(--color-text-white);
-  background: var(--color-text-red);
+  background: var(--color-hoverfocus-gray);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
