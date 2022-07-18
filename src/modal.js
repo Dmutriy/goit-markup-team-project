@@ -5,7 +5,7 @@
     openModalBtn: document.querySelector('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
-    body: document.querySelector('[body]'),
+    body: document.querySelector('body'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -24,7 +24,7 @@
     openModalBtn: document.querySelector('[data-modal-cone-open]'),
     closeModalBtn: document.querySelector('[data-modal-cone-close]'),
     modal: document.querySelector('[data-cone-modal]'),
-    body: document.querySelector('[body]'),
+    body: document.querySelector('body'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -43,7 +43,7 @@
     openModalBtn: document.querySelector('[data-modal-coffee-open]'),
     closeModalBtn: document.querySelector('[data-modal-coffee-close]'),
     modal: document.querySelector('[data-coffee-modal]'),
-    body: document.querySelector('[body]'),
+    body: document.querySelector('body'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -62,7 +62,7 @@
     openModalBtn: document.querySelector('[data-modal-milkshake-open]'),
     closeModalBtn: document.querySelector('[data-modal-milkshake-close]'),
     modal: document.querySelector('[data-milkshake-modal]'),
-    body: document.querySelector('[body]'),
+    body: document.querySelector('body'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
