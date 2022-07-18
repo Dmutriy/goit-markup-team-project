@@ -3,6 +3,9 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/mixin';
+@import './base/is-hidden';
+@import './base/no-skroll';
+
 // compinents
 @import './components/container';
 // common

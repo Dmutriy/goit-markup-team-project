@@ -2,6 +2,8 @@
     background-color: var(--color-background);
     padding-bottom: 60px;
     padding-top: 60px;
+    position:relative;
+    
 
 }
 
@@ -84,3 +86,73 @@ margin-top: 16px;
     display: block;
     background-repeat: no-repeat;
 }
+.advantages__animation{
+    
+    animation-name: changeCow;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    
+    
+}
+.advantages__moving {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    width:92px;
+    height: 70px;
+    overflow: hidden;
+    
+    animation-name: RunCow;
+    animation-duration: 5000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.advantages__moving:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes changeCow {
+    0% {
+    transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+.advantages__icon {
+    display: inline-block;
+    
+    width: 76px;
+    height: 58px;
+
+    stroke-width: 0;
+    stroke: var(--color-text-pink);
+    fill: var(--color-text-pink);
+    @include tablet {
+        width: 76px;
+        height: 58px;
+
+}}
+@keyframes RunCow {
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(-1600px);
+    }
+}
+

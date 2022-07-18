@@ -1,0 +1,187 @@
+
+/* Слайдер */
+.slick-slider{
+  display: flex;
+  min-width: 0;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include tablet {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @include desktop{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.slick-initialized .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  width: 100%;
+}
+.slider__imeg{
+  margin-bottom: 32px;
+  @include tablet{
+    margin-bottom: 20px;
+  }
+  @include desktop{
+    margin-bottom: 16px;
+  }
+}
+
+
+.slider__text-wraper{
+  background: #FAFAFA;
+  max-width: 280px;
+  margin:0 20px 16px 20px;
+  position: relative;
+  border-radius: 20px;
+  @include tablet {
+    max-width: 620px;
+    margin:0 74px 4px 74px;
+  }
+  @include desktop {
+    max-width: 968px;
+    margin:0 116px 16px 116px;
+  }
+}
+
+
+.slider__text::before{
+  position: absolute;
+  top: 22px;
+  left: 54px;
+  content: url(../images/quotes.svg);
+  opacity: .4;
+  @include tablet{
+    top: 19px;
+    left: 5px;
+  }
+  @include desktop{
+    top: 23px;
+    left: 79px;
+  }
+}
+.slider__text {
+  position: relative;
+  padding: 43px 58px 26px 65px;
+  display: flex;
+  align-items: center;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #000000;
+  @include tablet{
+    padding: 37px 55px 44px 51px;
+    font-size: 14px;
+    line-height: 2.14;
+  }
+  @include desktop{
+    padding: 47px 109px 39px;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+
+.slider__decoration-text {
+  width: calc(100% - 100px);
+  background: repeating-linear-gradient(#e1e1e1 1px,#00000000 3px,#00000000 32px);
+  margin: 0 auto;
+  position: absolute;
+  top: 66px;
+  bottom: 15px;
+  left: 36px;
+  right: 33px;
+  @include tablet {
+    width: calc(112% - 100px);
+    left: 13px;
+    right: 21px;
+  }
+  @include desktop {
+    width: calc(94% - 100px);
+    top: 73px;
+
+  }
+}
+.slider__decoration-wraper{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.slider__decoration-item {
+  margin-right: 10px;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #C7133E;
+}
+.slider__decoration-item:last-child{
+  margin-right: 0;
+}
+.slider__text-city {
+  position: relative;
+  margin-bottom: 16px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.85;
+  text-align: center;
+  color: #000000;
+  @include tablet{
+    font-size: 16px;
+    line-height: 1.87;
+  }
+  @include desktop{
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 1.9;
+  }
+}
+/* Точки (булиты) */
+.slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.slick-dots li{
+  list-style: none;
+  margin-right: 18px;
+}
+.slick-dots li:last-child{
+  margin-right: 0;
+}
+/* Элемент точки */
+ .slick-dots li button{
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  border: none;
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+background-image: url("../images/icon-house.svg");
+background-repeat: no-repeat;
+background-size: contain;
+background-color: #fff;
+}
