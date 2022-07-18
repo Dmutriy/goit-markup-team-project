@@ -29,12 +29,6 @@
   }
 }
 
-// .about {
-//   padding-top: 60px;
-//   padding-bottom: 15px;
-//   background: #fff5f6;
-// }
-
 .about-production {
   @include desktop {
     margin-top: 90px;
@@ -62,44 +56,6 @@
     margin-top: 60px;
   }
 }
-
-// .about-content {
-//     margin-top: 30px;
-
-//     @media screen and (max-width: 767px) {
-//         background-image: url(../images/about/about-milk-mob-x1.png);
-//         background-repeat: no-repeat;
-//         background-position: 30% 90%;
-//         background-size: contain;
-
-//         @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-//         only screen and (-moz-min-device-pixel-ratio: 1.5),
-//         only screen and (-o-min-device-pixel-ratio: 3/2),
-//         only screen and (min-device-pixel-ratio: 1.5) {
-//             background-image: url(../images/about/about-milk-mob-x2.png);
-//         }
-//     }
-
-//     @media screen and (min-width: 768px) {
-//         display: flex;
-//         max-width: 100%;
-//         margin-top: 60px;
-//     }
-
-//     @media screen and (min-width: 1200px) {
-//         max-width: 1200px;
-//         min-height: 100%;
-//         background-image: url(../images/about/about-milk-x1.png);
-//         background-size: contain;
-
-//         @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-//         only screen and (-moz-min-device-pixel-ratio: 1.5),
-//         only screen and (-o-min-device-pixel-ratio: 3/2),
-//         only screen and (min-device-pixel-ratio: 1.5) {
-//             background-image: url(../images/about/about-milk-x2.png);
-//         }
-//     }
-// }
 
 .about-content_item {
   @include tablet {
@@ -256,6 +212,7 @@
   left: 0;
   background-color: rgba(70, 3, 23, 0.2);
   transition: opacity 300ms, visibility 300ms;
+  z-index: 1;
 }
 
 .modal {
