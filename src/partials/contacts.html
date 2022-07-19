@@ -90,24 +90,96 @@
         <a
           class="button__link"
           href="https://goo.gl/maps/HEFBmHCvqnGk4naZ6"
-          target="_blank"
-          rel="noopener nofollow noreferrer"
-        >
-          <button type="button" class="contacts-button contacts-button__pink">
-            Our Locations
-            <svg class="contacts-button__vector-white" width="10" height="15">
-              <use href="images/icons.svg#icon-vector"></use>
-            </svg></button
         ></a>
+        <button type="button" class="contacts-button contacts-button__pink">
+          Our Locations
+          <svg class="contacts-button__vector-white" width="10" height="15">
+            <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
       </li>
       <li class="contacts-button__item">
-        <button type="button" class="contacts-button contacts-button__white">
+        <button
+          type="button"
+          class="contacts-button contacts-button__white"
+          data-popup-open
+        >
           Franchise
           <svg class="contacts-button__vector-pink" width="10" height="15">
-            <use href="images/icons.svg#icon-Vector-1"></use>
+            <use href="./images/icons.svg#icon-Vector-1"></use>
           </svg>
         </button>
       </li>
     </ul>
   </div>
 </section>
+
+<div class="popup__bg is-hidden" data-popup>
+  <div class="popup">
+    <button class="popup__close" data-popup-close>
+      <svg class="popup-icon__close" width="40px" height="40px">
+        <use href="images/icons.svg#icon-close_40px"></use>
+      </svg>
+    </button>
+    <form action="user-last-name">
+      <p class="popup__title">Franchise</p>
+      <label for="user-last-name" class="popup__label">First Name</label>
+      <div class="popup__wrap">
+        <input
+          type="text"
+          class="popup__input"
+          name="user-name"
+          id="user-last-name"
+          required
+        /><svg class="popup__svg" width="18px" height="18px">
+          <use href="images/icons.svg#icon-person"></use>
+        </svg>
+      </div>
+
+      <label for="user-name" class="popup__label">Last Name</label>
+      <div class="popup__wrap">
+        <input
+          type="text"
+          class="popup__input"
+          name="user-name"
+          id="user-name"
+          required
+        />
+        <svg class="popup__svg" width="18px" height="18px">
+          <use href="images/icons.svg#icon-person"></use>
+        </svg>
+      </div>
+      <label for="user-tel" class="popup__label">Phone number</label>
+      <div class="popup__wrap">
+        <input
+          type="tel"
+          class="popup__input"
+          name="user-tel"
+          id="user-tel"
+          required
+        />
+        <svg class="popup__svg" width="18px" height="18px">
+          <use href="images/icons.svg#icon-phone"></use>
+        </svg>
+      </div>
+
+      <label for="user-email" class="popup__label">Your e-mail</label>
+      <div class="popup__wrap">
+        <input
+          type="email"
+          class="popup__input"
+          name="user-email"
+          id="user-email"
+          required
+        />
+        <svg class="popup__svg" width="18px" height="18px">
+          <use href="images/icons.svg#icon-email"></use>
+        </svg>
+      </div>
+      <div class="popup__btn-div">
+        <button type="submit" class="popup__btn-send">Sent</button>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="popup.js"></script>
