@@ -221,4 +221,75 @@
       alt="girl"
     />
   </picture>
+  
 </section>
+
+<div class="popup__bg is-hidden" data-header-modal>
+  <div class="popup">
+  <button class="popup__close" data-header-close>
+    <svg class="popup-icon__close" width="40px" height="40px">
+      <use href="images/icons.svg#icon-close_40px"></use>
+    </svg>
+  </button>
+  <form action="user-last-name">
+    <p class="popup__title">We will call you back</p>
+    <form autocomplete="" novalidate>
+      <label for="user-last-name" class="popup__label">Your Name</label>
+      <div class="popup__wrap">
+        <input
+          type="text"
+          class="popup__input"
+          name="user-name"
+          id="user-name"
+          required
+        /><svg class="popup__svg" width="18px" height="18px">
+          <use href="images/icons.svg#icon-person"></use>
+        </svg>
+      </div>
+
+        <label for="user-tel" class="popup__label">Phone number</label>
+        <div class="popup__wrap">
+          <input
+            type="tel"
+            class="popup__input"
+            name="user-tel"
+            id="user-tel"
+            required
+          /> <svg class="popup__svg" width="18px" height="18px">
+            <use href="images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+        
+            <label for="user-email" class="popup__label">Your e-mail</label>
+            <div class="popup__wrap">
+              <input
+                type="email"
+                class="popup__input"
+                name="user-email"
+                id="user-email"
+                required
+              /> <svg class="popup__svg" width="18px" height="18px">
+                <use href="images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+
+<label for="user-address" class="popup__label">Your Address</label>
+      <div class="popup__wrap">
+        <input
+          type="text"
+          class="popup__input"
+          name="user-address"
+          id="user-address"
+          required
+        /><svg class="popup__svg" width="18px" height="18px">
+          <use href="images/icons.svg#icon-home"></use>
+        </svg>
+      </div>
+
+            <div class="popup__btn-div">
+              <button type="submit" class="popup__btn-send">Order</button>
+            </div>
+    </form>
+    </div>
+
+</div>
