@@ -3,12 +3,15 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/mixin';
+@import './base/is-hidden';
+@import './base/no-skroll';
+
 // compinents
 @import './components/container';
 // common
 @import './common';
 // example
-@import './example';
+// @import './example';
 // layout
 @import './layout/hero-header';
 @import './layout/products';

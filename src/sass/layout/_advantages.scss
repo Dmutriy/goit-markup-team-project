@@ -1,1 +1,158 @@
+.advantages {
+    background-color: var(--color-background);
+    padding-bottom: 60px;
+    padding-top: 60px;
+    position:relative;
+    
+
+}
+
+.advantages__list {
+    @include tablet {
+        display: flex;
+        
+    }
+}
+
+.advantages__title {
+font-family: 'Titan One';
+text-transform: uppercase;
+height:56px;
+color: var(--color-text-red);
+@include font(400, 36px, 1.139, 0.04em);
+margin-top: 16px;
+@include tablet {
+    @include font(null, 48px, 1.146, 0.04em);
+    margin-top: 36px;
+}
+@include desktop {
+    @include font(null, 58px, 1.138, 0.04em);
+    margin-top: 40px;
+}
+}
+.advantages__text {
+    margin-top: 4px;
+    @include font(700, null, 1.7, null);
+    @include tablet {
+        margin-top: 14px;
+    @include font(null, 14px, 1.74, null);
+    }
+    @include desktop {
+        margin-top: 16px;
+        @include font(null, 16px, 1.76, 0.02em);
+        }
+    }
+
+.advantages__item {
+    width: 230px;
+    @include tablet {
+        width:180px;
+    }
+    @include desktop {
+        width:288px;
+    }
+}
+.advantages__item:not(:first-child) {
+    margin-top: 32px;
+    @include tablet {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+    @include desktop {
+        margin-left: 100px;
+    }
+}
+
+.advantages__item:first-child::before {
+    content: "";
+    height: 50px;
+    background-image: url('../images/icon-coctail.png');
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.advantages__item:last-child::before {
+    content: "";
+    height: 50px;
+    background-image: url('../images/icon-heart.png');
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.advantages__item:nth-child(2)::before {
+    content: "";
+    height: 50px;
+    background-image: url('../images/icon-icecream.png');
+    display: block;
+    background-repeat: no-repeat;
+}
+.advantages__animation{
+    
+    animation-name: changeCow;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    
+    
+}
+.advantages__moving {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    width:92px;
+    height: 70px;
+    overflow: hidden;
+    
+    animation-name: RunCow;
+    animation-duration: 5000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.advantages__moving:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes changeCow {
+    0% {
+    transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+.advantages__icon {
+    display: inline-block;
+    
+    width: 76px;
+    height: 58px;
+
+    stroke-width: 0;
+    stroke: var(--color-text-pink);
+    fill: var(--color-text-pink);
+    @include tablet {
+        width: 76px;
+        height: 58px;
+
+}}
+@keyframes RunCow {
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(-1600px);
+    }
+}
 

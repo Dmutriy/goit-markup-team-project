@@ -1,0 +1,143 @@
+<section class="products">
+  <div class="container">
+    <p class="products__pre-title">100% natural</p>
+    <h2 class="products__title">products</h2>
+    <ul class="products__list">
+      <li
+        class="products__item"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        <div class="products__content">
+          <h3 class="products__name">ice cream</h3>
+          <p class="products__description">
+            Kids love it, adults love it, we all love it. It's ice cream, of
+            course! Check out our amazing variety of this mouth-watering
+            dessert.
+          </p>
+          <button type="button" class="products__btn" data-modal-cone-open>
+            <svg class="products__icon" width="10" height="10">
+              <use href="/src/images/icons.svg#icon-arrow-right2"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="products__item">
+        <div class="products__content">
+          <h3 class="products__name">ice coffee</h3>
+          <p class="products__description">
+            When the first rays of the sunlight appear in spring, is there
+            anything better than iced coffee when temperatures are rising?
+          </p>
+          <button type="button" class="products__btn" data-modal-coffee-open>
+            <svg class="products__icon" width="10" height="10">
+              <use href="/src/images/icons.svg#icon-arrow-right2"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li
+        class="products__item"
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        <div class="products__content">
+          <h3 class="products__name">milkshakes</h3>
+          <p class="products__description">
+            Time to shake it up! Some are thick. Some are thin. Most are yummy.
+            Milkshakes are the popular drink of ice cream, milk, and select
+            flavoring.
+          </p>
+          <button type="button" class="products__btn" data-modal-milkshake-open>
+            <svg class="products__icon" width="10" height="10">
+              <use href="/src/images/icons.svg#icon-arrow-right2"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Cone -->
+<div class="backdrop is-hidden" data-cone-modal>
+  <div class="modal cone">
+    <form class="form">
+      <h4 class="modal-title">sweet science</h4>
+      <p class="modal-text">
+        Ever noticed that when your pint melts and then re-freezes it ends up a
+        different texture? That’s because ice cream has tiny, microscopic air
+        bubbles in it that keep it soft and fluffy. When it melts, the molecular
+        structure breaks down, and the air escapes.
+      </p>
+      <p class="modal-text">
+        So when you re-freeze it and then go to grab a scoop, it’s not as soft.
+        (That’s why you have to eat it all in one sitting. Because, science.)
+      </p>
+      <button type="button" class="products__btn--modal" data-modal-cone-close>
+        <svg class="products__icon" width="10" height="10">
+          <use href="/src/images/icons.svg#icon-arrow-right2"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Coffee -->
+<div class="backdrop is-hidden" data-coffee-modal>
+  <div class="modal coffee">
+    <form class="form">
+      <h4 class="modal-title">don't you love it?</h4>
+      <p class="modal-text">
+        Drinking iced coffee is a real refreshment compared to hot coffee.
+        You'll never burn your tongue on that really hot coffee again. You do
+        not have to wait for the coffee to reach a drinkable temperature, you
+        can enjoy the coffee immediately!
+      </p>
+      <p class="modal-text">
+        The iced coffee is then just as delicious to drink as when it is
+        extremely cold. Hot coffee that has turned cold is a completely
+        different story.
+      </p>
+      <button
+        type="button"
+        class="products__btn--modal"
+        data-modal-coffee-close
+      >
+        <svg class="products__icon" width="10" height="10">
+          <use href="/src/images/icons.svg#icon-arrow-right2"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Milkshake -->
+<div class="backdrop is-hidden" data-milkshake-modal>
+  <div class="modal milkshake">
+    <form class="form">
+      <h4 class="modal-title">fun fact!</h4>
+      <p class="modal-text">
+        According to The Guinness Book of World Records, in 2000 Ira Freehof
+        (owner of Comfort Diners), (with a lot of help from Parmalot USA and The
+        American Dairy Association), made the world’s largest milkshake. At
+        6,000 gallons it was the equivalent of 50,000 normal-sized shakes.
+      </p>
+      <p class="modal-text">
+        Do you want fries with that? (Please say no, you don’t need anything
+        else to eat or drink after that, especially not fatty fries.)
+      </p>
+      <button
+        type="button"
+        class="products__btn--modal"
+        data-modal-milkshake-close
+      >
+        <svg class="products__icon" width="10" height="10">
+          <use href="/src/images/icons.svg#icon-arrow-right2"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
