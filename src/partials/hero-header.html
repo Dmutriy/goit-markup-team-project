@@ -3,44 +3,53 @@
 <header class="header container">
   <div class="header__wrap">
     <nav class="nav">
-      <a href="/src/index.html">
+      <a class="header__logo" href="/src/index.html">
         <picture>
-          <source srcset="
-                                      /src/images/hero/ice-logo.png  1x,
-                                      /src/images/hero/ice-logo-2.png 2x " media="(min-width: 1200px)" />
-          <img src="/src/images/hero/ice-logo.png" width="199" height="50" alt="logo" />
+          <source
+            srcset="
+              /src/images/hero/ice-logo.png   1x,
+              /src/images/hero/ice-logo-2.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img
+            src="/src/images/hero/ice-logo.png"
+            width="199"
+            height="50"
+            alt="logo"
+          />
         </picture>
       </a>
-  
+
       <ul class="nav__list">
         <li class="nav__item">
           <a href="#" class="nav__link current">Home</a>
         </li>
-  
+
         <li class="nav__item">
           <a href="#advantages" class="nav__link">About us</a>
         </li>
-  
+
         <li class="nav__item">
           <a href="#about" class="nav__link">How it’s made?</a>
         </li>
-  
+
         <li class="nav__item">
           <a href="#products" class="nav__link">Our products</a>
         </li>
-  
+
         <li class="nav__item">
           <a href="#contact" class="nav__link">Contact</a>
         </li>
       </ul>
     </nav>
-  
+
     <button type="button" class="menu-open-btn">
       <svg width="20" height="12">
         <use href="/src/images/icons.svg#icon-burger"></use>
       </svg>
     </button>
-  
+
     <button type="button" class="header__btn">
       Buy now
       <svg width="4" height="8">
@@ -48,7 +57,7 @@
       </svg>
     </button>
   </div>
-  
+
   <div class="mob-menu-backdrop is-hidden">
     <div class="mob-menu">
       <button type="button" class="menu-close-btn">
@@ -62,24 +71,24 @@
           <use href="/src/images/icons.svg#icon-button-mark"></use>
         </svg>
       </button>
-  
+
       <ul class="menu-nav">
         <li class="menu-nav__item">
           <a href="#home" class="menu-nav__link current">Home</a>
         </li>
-  
+
         <li class="menu-nav__item">
           <a href="#advantages" class="menu-nav__link">About us</a>
         </li>
-  
+
         <li class="menu-nav__item">
           <a href="#about" class="menu-nav__link">How it’s made?</a>
         </li>
-  
+
         <li class="menu-nav__item">
           <a href="#products" class="menu-nav__link">Our products</a>
         </li>
-  
+
         <li class="menu-nav__item">
           <a href="#contact" class="menu-nav__link">Contact</a>
         </li>
@@ -91,80 +100,126 @@
 <!-- Hero -->
 
 <section class="hero container">
-    <div class="hero__content">
-      <h1 class="hero__title">ice cream <br> made with <br>
-        <span>passion</span>
-      </h1>
-      <ul class="hero__list">
-        <li>
-          <a href="#products" class="hero__btn btn--red">
-            Products</a>
-        </li>
-    
-        <li>
-          <a href="#about" class="hero__btn btn--white">
-            How it’s made?</a>
-        </li>
-      </ul>
-    
-      <div class="sub-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-        <a href="/src/index.html">
-          <svg width="8" height="8">
-            <use href="/src/images/icons.svg#icon-arrow-right2"></use>
-          </svg>
-        </a>
-      </div>
+  <div class="hero__content">
+    <h1 class="hero__title">
+      ice cream <br />
+      made with <br />
+      <span>passion</span>
+    </h1>
+    <ul class="hero__list">
+      <li>
+        <a href="#products" class="hero__btn btn--red"> Products</a>
+      </li>
+
+      <li>
+        <a href="#about" class="hero__btn btn--white"> How it’s made?</a>
+      </li>
+    </ul>
+
+    <div class="sub-content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <a href="/src/index.html">
+        <svg width="8" height="8">
+          <use href="/src/images/icons.svg#icon-arrow-right2"></use>
+        </svg>
+      </a>
     </div>
-    
-    <div class="amount">
-      <ul class="amount__list">
-        <li class="amount__item">
-          <p>
-            <span class="amount__number">16</span> <br />
-            <span class="amount__text">cafes</span>
-          </p>
-        </li>
-    
-        <li class="amount__item">
-          <p>
-            <span class="amount__number">23</span> <br />
-            <span class="amount__text">food trucks</span>
-          </p>
-        </li>
-      </ul>
-    </div>
-    
-    <picture class="hero__ice-cream">
-      <source srcset="
-            /src/images/hero/hero-ice-cream-x1.png  1x,
-            /src/images/hero/hero-ice-cream-x2.png 2x " media="(min-width: 1200px)" />
-      <source srcset="
-            /src/images/hero/hero-ice-cream-tab-x1.png  1x,
-            /src/images/hero/hero-ice-cream-tab-x2.png 2x " media="(min-width: 768px)" />
-      <source srcset="
-        /src/images/hero/hero-ice-cream-mob-x1.png  1x,
-        /src/images/hero/hero-ice-cream-mob-x2.png 2x " media="(min-width: 320px)" />
-      <img src="/src/images/hero/hero-ice-cream-mob-x1.png" width="236" height="557" alt="ice-cream" />
-    </picture>
-    
-    <picture class="hero__big-eco">
-      <source srcset="
-              /src/images/hero/big-eco-x1.png  1x,
-              /src/images/hero/big-eco-x2.png 2x " media="(min-width: 1200px)" />
-      <source srcset="
-              /src/images/hero/big-eco-tab-x1.png  1x,
-              /src/images/hero/big-eco-tab-x2.png 2x " media="(min-width: 768px)" />
-      <img src="/src/images/hero/big-eco-tab-x1.png" width="213" height="216" alt="big-eco" />
-    </picture>
-    
-    <picture class="hero__girl">
-      <source srcset="
-              /src/images/hero/hero-girl-x1.png  1x,
-              /src/images/hero/hero-girl-x2.png 2x " media="(min-width: 1200px)" />
-      <source srcset="
-              /src/images/hero/hero-girl-tab-x1.png  1x,
-              /src/images/hero/hero-girl-tab-x2.png 2x " media="(min-width: 768px)" />
-      <img src="/src/images/hero/hero-girl-tab-x1.png" width="304" height="241" alt="girl" />
-    </picture>
+  </div>
+
+  <div class="amount">
+    <ul class="amount__list">
+      <li class="amount__item">
+        <p>
+          <span class="amount__number">16</span> <br />
+          <span class="amount__text">cafes</span>
+        </p>
+      </li>
+
+      <li class="amount__item">
+        <p>
+          <span class="amount__number">23</span> <br />
+          <span class="amount__text">food trucks</span>
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <picture class="hero__ice-cream">
+    <source
+      srcset="
+        /src/images/hero/hero-ice-cream-x1.png 1x,
+        /src/images/hero/hero-ice-cream-x2.png 2x
+      "
+      media="(min-width: 1200px)"
+    />
+    <source
+      srcset="
+        /src/images/hero/hero-ice-cream-tab-x1.png 1x,
+        /src/images/hero/hero-ice-cream-tab-x2.png 2x
+      "
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="
+        /src/images/hero/hero-ice-cream-mob-x1.png 1x,
+        /src/images/hero/hero-ice-cream-mob-x2.png 2x
+      "
+      media="(min-width: 320px)"
+    />
+    <img
+      src="/src/images/hero/hero-ice-cream-mob-x1.png"
+      width="236"
+      height="557"
+      alt="ice-cream"
+    />
+  </picture>
+
+  <picture class="hero__big-eco">
+    <source
+      srcset="
+        /src/images/hero/big-eco-x1.png 1x,
+        /src/images/hero/big-eco-x2.png 2x
+      "
+      media="(min-width: 1200px)"
+    />
+    <source
+      srcset="
+        /src/images/hero/big-eco-tab-x1.png 1x,
+        /src/images/hero/big-eco-tab-x2.png 2x
+      "
+      media="(min-width: 768px)"
+    />
+    <img
+      src="/src/images/hero/big-eco-tab-x1.png"
+      width="213"
+      height="216"
+      alt="big-eco"
+    />
+  </picture>
+
+  <picture class="hero__girl">
+    <source
+      srcset="
+        /src/images/hero/hero-girl-x1.png 1x,
+        /src/images/hero/hero-girl-x2.png 2x
+      "
+      media="(min-width: 1200px)"
+    />
+    <source
+      srcset="
+        /src/images/hero/hero-girl-tab-x1.png 1x,
+        /src/images/hero/hero-girl-tab-x2.png 2x
+      "
+      media="(min-width: 768px)"
+    />
+    <img
+      src="/src/images/hero/hero-girl-tab-x1.png"
+      width="304"
+      height="241"
+      alt="girl"
+    />
+  </picture>
 </section>
