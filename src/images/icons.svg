@@ -3,6 +3,9 @@
 <symbol id="icon-burger" viewBox="0 0 46 32">
 <path stroke="#d41443" stroke-width="2.2857" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color1, #d41443)" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"></path>
 </symbol>
+<symbol id="icon-home" viewBox="0 0 32 32">
+<path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path>
+</symbol>
 <symbol id="icon-button-mark" viewBox="0 0 20 32">
 <path  d="M0.953 5.565c-0.647-0.585-1.051-1.428-1.051-2.364 0-0.83 0.317-1.585 0.837-2.152l-0.002 0.002c1.175-1.299 3.185-1.422 4.483-0.216l14.191 12.8c1.299 1.175 1.391 3.185 0.216 4.514l-0.247 0.216-14.16 12.8c-0.562 0.509-1.311 0.82-2.133 0.82-1.759 0-3.185-1.426-3.185-3.185 0-0.937 0.405-1.78 1.049-2.363l0.003-0.002 11.563-10.45-11.563-10.419z"></path>
 </symbol>
