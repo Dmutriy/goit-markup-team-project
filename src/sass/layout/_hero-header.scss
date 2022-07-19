@@ -1,245 +1,244 @@
 // Header
 
 .header {
-    padding-top: 8px;
-    background-color: var(--color-background-pink);
-    position: absolute;
-    left: 0;
-    right: 0;
+  padding-top: 8px;
+  // background-color: var(--color-background-pink);
+  position: absolute;
+  left: 0;
+  right: 0;
 
-    z-index: 3;
-    @include tablet {
-        padding-top: 32px;
-        z-index: 1;
-    }
-    @include tablet {
+  z-index: 3;
+  @include tablet {
+    padding-top: 32px;
+    z-index: 2;
+  }
+  @include tablet {
     padding-top: 37px;
+  }
+
+  &__wrap {
+    @include flex;
+  }
+
+  &__btn {
+    display: none;
+
+    @include tablet {
+      @include flex;
+      @include font(bold, 16px, 1.3, null);
+      border-radius: 22px;
+      border: transparent;
+      padding: 12px 37px;
+      margin-left: 32px;
+      background-color: var(--color-text-white);
+      color: var(--color-text-red);
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      svg {
+        fill: var(--color-text-red);
+        margin-left: 12px;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: var(--color-hoverfocus-gray);
+      }
     }
 
-    &__wrap {
-        @include flex;
+    @include desktop {
+      margin-left: auto;
     }
-
-    &__btn {
-        display: none;
-
-        @include tablet {
-            @include flex;
-            @include font(bold, 16px, 1.3, null);
-            border-radius: 22px;
-            border: transparent;
-            padding: 12px 37px;
-            margin-left: 32px;
-            background-color: var(--color-text-white);
-            color: var(--color-text-red);
-            cursor: pointer;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-            svg {
-                fill: var(--color-text-red);
-                margin-left: 12px;
-            }
-
-            &:hover,
-            &:focus {
-                background-color: var(--color-hoverfocus-gray);
-            }
-        }
-
-        @include desktop {
-            margin-left: auto;
-        }
-    }
+  }
 }
 
 .menu-open-btn,
 .menu-close-btn {
-    display: block;
-    margin-left: auto;
-    background-color: transparent;
-    border-color: transparent;
-    cursor: pointer;
+  display: block;
+  margin-left: auto;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
 
-    @include desktop {
-        display: none;
-    }
+  @include desktop {
+    display: none;
+  }
 }
 
 .nav {
+  @include flex;
+
+  &__list {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+
     @include flex;
+    gap: 35px;
+    margin-left: 130px;
+  }
 
-    &__list {
-        @media screen and (max-width: 1199px) {
-            display: none;
-        }
-
-        @include flex;
-        gap: 35px;
-        margin-left: 130px;
-    }
-
-    &__link {
-        padding: 15px 0;
-        @include font(bold, 16px, 1.3, null);
-        color: var(--color-text-white);
-
-    }
+  &__link {
+    padding: 15px 0;
+    @include font(bold, 16px, 1.3, null);
+    color: var(--color-text-white);
+  }
 }
 
 // Hero
 
 .hero {
-    position: relative;
-    min-height: 502px;
-    background-color: var(--color-background-pink);
-    align-items: center;
-    overflow: hidden;
+  position: relative;
+  min-height: 502px;
+  background-color: var(--color-background-pink);
+  align-items: center;
+  overflow: hidden;
+  @include tablet {
+    min-height: 416px;
+  }
+  @include desktop {
+    min-height: 664px;
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 2;
+  }
+
+  &__title {
+    margin-top: 194px;
+    font-family: 'Titan One';
+    @include font(400, 26px, 1.15, 0.04em);
+    text-transform: uppercase;
+    color: var(--color-text-white);
     @include tablet {
-        min-height: 416px;
+      @include font(null, 22px, null, null);
+      margin-top: 102px;
     }
     @include desktop {
-        min-height: 664px;
+      margin-top: 147px;
+      @include font(null, 38px, null, null);
     }
 
-    &__content {
-        position: absolute;
-        z-index: 2;
+    span {
+      color: var(--color-text-red);
+      @include font(null, 48px, 0.96, null);
+      @include tablet {
+        @include font(null, 34px, 0.9, null);
+      }
+      @include desktop {
+        @include font(null, 58px, null, null);
+      }
+    }
+  }
+
+  &__list {
+    display: inline-flex;
+    margin-top: 20px;
+    gap: 8px;
+    @include desktop {
+      margin-top: 24px;
+      gap: 12px;
+    }
+  }
+
+  &__btn {
+    @include font(null, 8px, 1.25, null);
+    border-radius: 20px;
+    border: transparent;
+    padding: 7px 14px;
+    @include desktop {
+      @include font(null, 14px, null, null);
+      padding: 11px 20px;
+    }
+  }
+
+  &__ice-cream {
+    position: absolute;
+    top: 92px;
+    right: 32px;
+    width: 171px;
+    z-index: 1;
+    @include tablet {
+      top: 80px;
+      right: 303px;
+      width: 143px;
+    }
+    @include desktop {
+      top: 108px;
+      right: 328px;
+      width: 236px;
     }
 
-    &__title {
-        margin-top: 194px;
-        font-family: 'Titan One';
-        @include font(400, 26px, 1.15, 0.04em);
-        text-transform: uppercase;
-        color: var(--color-text-white);
-        @include tablet {
-            @include font(null, 22px, null, null);
-            margin-top: 102px;
-        }
-        @include desktop {
-            margin-top: 147px;
-            @include font(null, 38px, null, null);
-        }
-
-        span {
-        color: var(--color-text-red);
-        @include font(null, 48px, 0.96, null);
-            @include tablet {
-                @include font(null, 34px, 0.9, null);
-            }
-            @include desktop {
-                @include font(null, 58px, null, null);
-            }
-        }
+    &::before {
+      content: '';
+      position: absolute;
+      left: -81px;
+      top: -9px;
+      width: 346px;
+      height: 344px;
+      border-radius: 50%;
+      background-color: var(--color-text-pink);
+      z-index: -1;
+      @include tablet {
+        top: -37px;
+        width: 335px;
+        height: 333px;
+      }
+      @include desktop {
+        top: -54px;
+        left: -119px;
+        width: 534px;
+        height: 534px;
+      }
     }
+  }
 
-    &__list {
-        display: inline-flex;
-        margin-top: 20px;
-        gap: 8px;
-        @include desktop {
-        margin-top: 24px;
-        gap: 12px;
-        }
+  &__big-eco {
+    display: none;
+    @include tablet {
+      display: flex;
+      position: absolute;
+      top: 246px;
+      width: 152px;
     }
-
-    &__btn {
-        @include font(null, 8px, 1.25, null);
-        border-radius: 20px;
-        border: transparent;
-        padding: 7px 14px;
-        @include desktop {
-            @include font(null, 14px, null, null);
-            padding: 11px 20px;
-        }
+    @include desktop {
+      top: 388px;
+      width: 213px;
     }
+  }
 
-    &__ice-cream {
-        position: absolute;
-        top: 92px;
-        right: 32px;
-        width: 171px;
-        z-index: 1;
-        @include tablet {
-        top: 80px;
-        right: 303px;
-        width: 143px;
-        }
-        @include desktop {
-        top: 108px;
-        right: 328px;
-        width: 236px;
-        }
-
-        &::before {
-            content: "";
-            position: absolute;
-            left: -81px;
-            top: -9px;
-            width: 346px;
-            height: 344px;
-            border-radius: 50%;
-            background-color: var(--color-text-pink);
-            z-index: -1;
-            @include tablet {
-            top: -37px;
-            width: 335px;
-            height: 333px;
-            }
-            @include desktop {
-            top: -54px;    
-            left: -119px;
-            width: 534px;
-            height: 534px;
-            }
-        }
+  &__girl {
+    display: none;
+    @include tablet {
+      display: flex;
+      position: absolute;
+      right: 32px;
+      top: 265;
+      width: 190px;
+      z-index: 1;
     }
-
-    &__big-eco {
-        display: none;
-        @include tablet{
-            display: flex;
-            position: absolute;
-            top: 246px;
-            width: 152px;
-        }
-        @include desktop {
-            top: 388px;
-            width: 213px;
-            }
-        }
-    
-    &__girl {
-        display: none;
-        @include tablet {
-            display: flex;
-            position: absolute;
-            right: 32px;
-            top: 265;
-            width: 190px;
-            z-index: 1;
-        }
-        @include desktop {
-            width: 304px;
-            top: 423;
-            right: 15;
-        }
+    @include desktop {
+      width: 304px;
+      top: 423;
+      right: 15;
     }
+  }
 }
 
 .btn--red {
-    background-color: var(--color-text-red);
-    color: var(--color-text-white);
+  background-color: var(--color-text-red);
+  color: var(--color-text-white);
 }
 
 .btn--white {
-    background-color: var(--color-text-white);
-    color: var(--color-text-red)
+  background-color: var(--color-text-white);
+  color: var(--color-text-red);
 }
 
 .sub-content {
-    display: none;
-    @include tablet {
+  display: none;
+  @include tablet {
     @include flex;
     flex-wrap: wrap;
     width: 114px;
@@ -247,171 +246,171 @@
     margin-left: 152px;
 
     p {
-        @include font(null, 8px, 1.5, null);
-        color: var(--color-text-white);
-        @include desktop {
-            @include font(null, 14px, 1.4, null);
-        }
+      @include font(null, 8px, 1.5, null);
+      color: var(--color-text-white);
+      @include desktop {
+        @include font(null, 14px, 1.4, null);
+      }
     }
 
     a {
-        @include flex;
-        justify-content: center;
-        margin-top: 7px;
-        width: 18px;
-        height: 18px;
-        border-radius: 50%;
-        background-color: var(--color-text-white);
-        fill: var(--color-text-red);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:focus {
+      @include flex;
+      justify-content: center;
+      margin-top: 7px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: var(--color-text-white);
+      fill: var(--color-text-red);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
         background-color: var(--color-text-red);
         fill: var(--color-text-white);
-        }
-        @include desktop {
-            margin-top: 20px;
-            width: 26px;
-            height: 26px;
-        }
+      }
+      @include desktop {
+        margin-top: 20px;
+        width: 26px;
+        height: 26px;
+      }
     }
-    @include desktop{
-        margin-top: 118px;
-        margin-left: 214px;
-        width: 200px;
+    @include desktop {
+      margin-top: 118px;
+      margin-left: 214px;
+      width: 200px;
     }
-    }
+  }
 }
 
 .amount {
-    display: none;
-    @include tablet {
-        @include flex;
-        justify-content: flex-end;
-        margin-top: 96px;
-        margin-right: 8px;
-        @include desktop {
-            margin-top: 162px;
-            margin-right: 15px;
-        }
-        
-        &__list {   
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            @include desktop {
-            gap: 30px;
-            }
-        }
-        
-        &__item {
-            position: relative;
-            text-align: end;
-            z-index: 0;
-        }
-        
-        &__number {
-            font-family: 'Titan One';
-            color: var(--color-text-red);
-            @include font(null, 28px, 1.15, null);
-            @include desktop {
-                @include font(null, 46px, null, 0.04);
-            }
-            &::before {
-                    content: "";
-                    position: absolute;
-                    width: 16px;
-                    height: 16px;
-                    border-radius: 50%;
-                    right: -8px;
-                    top: -4px;
-                    z-index: -1;
-                    background-color: var(--color-text-white);
-                    @include desktop {
-                    width: 30px;
-                    height: 30px;
-                    top: -10px;
-                    right: -15px;
-                    }
-                }
-        }
-        
-        &__text {
-            @include font(null, 8px, 1.25, null);
-            color: var(--color-text-white);
-        }
+  display: none;
+  @include tablet {
+    @include flex;
+    justify-content: flex-end;
+    margin-top: 96px;
+    margin-right: 8px;
+    @include desktop {
+      margin-top: 162px;
+      margin-right: 15px;
     }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      @include desktop {
+        gap: 30px;
+      }
+    }
+
+    &__item {
+      position: relative;
+      text-align: end;
+      z-index: 0;
+    }
+
+    &__number {
+      font-family: 'Titan One';
+      color: var(--color-text-red);
+      @include font(null, 28px, 1.15, null);
+      @include desktop {
+        @include font(null, 46px, null, 0.04);
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        right: -8px;
+        top: -4px;
+        z-index: -1;
+        background-color: var(--color-text-white);
+        @include desktop {
+          width: 30px;
+          height: 30px;
+          top: -10px;
+          right: -15px;
+        }
+      }
+    }
+
+    &__text {
+      @include font(null, 8px, 1.25, null);
+      color: var(--color-text-white);
+    }
+  }
 }
 
 .mob-menu-backdrop {
-    width: 100vw;
-    height: 100vh;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .mob-menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #E17992;
-    width: 250px;
-    height: 100vh;
-    @include desktop {
-    display: none
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #e17992;
+  width: 250px;
+  height: 100vh;
+  @include desktop {
+    display: none;
+  }
+
+  &__btn {
+    @include flex;
+    @include font(bold, 16px, 1.3, null);
+    border-radius: 22px;
+    border: transparent;
+    padding: 12px 62px;
+    margin: 16 auto 19 auto;
+    background-color: var(--color-text-white);
+    color: var(--color-text-red);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    svg {
+      fill: var(--color-text-red);
+      margin-left: 15px;
     }
 
-    &__btn {
-        @include flex;
-        @include font(bold, 16px, 1.3, null);
-        border-radius: 22px;
-        border: transparent;
-        padding: 12px 62px;
-        margin: 16 auto 19 auto;
-        background-color: var(--color-text-white);
-        color: var(--color-text-red);
-        cursor: pointer;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
-        svg {
-            fill: var(--color-text-red);
-            margin-left: 15px;
-        }
-        
-        &:hover,
-        &:focus {
-            background-color: var(--color-hoverfocus-gray);
-        }
+    &:hover,
+    &:focus {
+      background-color: var(--color-hoverfocus-gray);
     }
+  }
 }
 
 .menu-close-btn {
-    margin-top: 10px;
-    margin-right: 10px;
-    padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px;
 }
 
 .menu-nav__item {
-    padding-left: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border-top: 1px solid #E18298;
-    border-bottom: 1px solid #E18298;
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
 }
 
 .menu-nav__link {
-    @include font(bold, 14px, 1.3, null);
-    color: var(--color-text-white);
+  @include font(bold, 14px, 1.3, null);
+  color: var(--color-text-white);
 }
 
 .is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .current {
-    color: var(--color-text-red);
+  color: var(--color-text-red);
 }
