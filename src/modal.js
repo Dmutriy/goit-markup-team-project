@@ -17,22 +17,22 @@
   }
 })();
 
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-cone-open]'),
-    closeModalBtn: document.querySelector('[data-modal-cone-close]'),
-    modal: document.querySelector('[data-cone-modal]'),
-    body: document.querySelector('body'),
-  };
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector('[data-modal-cone-open]'),
+//     closeModalBtn: document.querySelector('[data-modal-cone-close]'),
+//     modal: document.querySelector('[data-cone-modal]'),
+//     body: document.querySelector('body'),
+//   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+//   refs.openModalBtn.addEventListener('click', toggleModal);
+//   refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-    refs.body.classList.toggle('no-scroll');
-  }
-})();
+//   function toggleModal() {
+//     refs.modal.classList.toggle('is-hidden');
+//     refs.body.classList.toggle('no-scroll');
+//   }
+// })();
 
 // About
 
