@@ -43,10 +43,12 @@
 .gallery__item {
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   animation: flip-scale-down-ver 0.5s linear both;
+  
 
   &:hover,
   &:focus {
     transform: scale(1.2);
+    z-index: 999;
   }
 }
 
@@ -196,9 +198,9 @@
 }
 
 .card {
-  box-shadow: 0px 2px 4px rgba(184, 14, 119, 0.12),
-    0px 5px 5px rgba(184, 14, 119, 0.12), 2px 5px 7px rgba(184, 14, 119, 0.12);
-  border-radius: 20px;
+  box-shadow: 0px 3px 5px rgba(184, 14, 119, 0.12),
+    0px 6px 6px rgba(184, 14, 119, 0.12), 3px 6px 7px rgba(184, 14, 119, 0.12);
+  border-radius: 30px;
 
   overflow: hidden;
 }

@@ -1,4 +1,4 @@
-<section class="about" lang="uk">
+<section class="about" id="about">
   <div class="container">
     <p class="about-content__top-text top-text">
       tradition and love</p>
@@ -9,14 +9,14 @@
         <li class="about-content_item">
           <picture>
             <source srcset="
-                    ./images/about/about-cow-x1.png 1x,
-                    ./images/about/about-cow-x2.png 2x" media="(min-width:1200px)" />
+                    images/about/about-cow-x1.png 1x,
+                    images/about/about-cow-x2.png 2x" media="(min-width:1200px)" />
             <source srcset="
-                    ./images/about/about-cow-tab-x1.png 1x,
-                    ./images/about/about-cow-tab-x2.png 2x" media="(min-width:768px)" />
+                    images/about/about-cow-tab-x1.png 1x,
+                    images/about/about-cow-tab-x2.png 2x" media="(min-width:768px)" />
             <source srcset="
-                   ./images/about/about-cow-mob-x1.png 1x,
-                   ./images/about/about-cow-mob-x2.png 2x" media="(min-width:460px)" />
+                    images/about/about-cow-mob-x1.png 1x,
+                    images/about/about-cow-mob-x2.png 2x" media="(min-width:460px)" />
             <img src="./images/about/about-cow-x1.png" alt="Корова з молоком" width="501" height="501">
           </picture>
         </li>
@@ -36,7 +36,7 @@
         </p>
         <button type="button" class="about-production__btn production-btn" data-modal-open>Read more
           <svg class="production-button-icon" width="10" height="15">
-            <use href="./images/icons.svg#icon-Vector-1"></use>
+            <use href="images/icons.svg#icon-Vector-1"></use>
           </svg>
         </button>
       </div>
@@ -47,9 +47,9 @@
   <div class="modal">
     <button type="button" class="modal-close-btn" data-modal-close>
       <svg class="close-icon" width="30" height="30">
-        <use href="./images/icons.svg#icon-close_40px"></use>
+        <use href="images/icons.svg#icon-close_40px"></use>
       </svg></button>
-    <form class="form">
+      <div class="form">
       <h4 class="modal-title">Description</h4>
       <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates animi ex, culpa cumque
         temporibus nesciunt nobis laborum fugit maiores tempora! Quod commodi facere at totam deserunt excepturi,
@@ -60,7 +60,6 @@
         aperiam
         recusandae nam.</p>
       <button type="submit" class="btn-submit">Reviews</button>
-    </form>
+      </div>
   </div>
 </div>
-<script src="./modal.js"></script>

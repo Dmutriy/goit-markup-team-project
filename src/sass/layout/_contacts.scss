@@ -49,7 +49,8 @@
   padding: 40px 32px;
   background: var(--color-text-white);
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   animation: flip-scale-down-ver 0.5s linear both;
   @include tablet {
     @include font(500, 14px, 1.85, 00.04em);
@@ -62,7 +63,7 @@
 }
 .contacts-card__item:focus,
 .contacts-card__item:hover {
-  transform: scale(1.2);
+transform: scale(1.1);
 }
 .card__title {
   margin-bottom: 8px;
@@ -185,8 +186,7 @@
 }
 .contacts-button__white:hover,
 .contacts-button__white:focus {
-  color: var(--color-text-white);
-  background: var(--color-text-red);
+  background: var(--color-hoverfocus-gray);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
