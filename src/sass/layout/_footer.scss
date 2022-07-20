@@ -1,6 +1,21 @@
 .footer {
-  padding: 40px 20px;
   background: var(--color-background);
+  //   padding-top: 40px;
+}
+.footer__main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  //   padding: 0px 20px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
   @include desktop {
     padding-top: 121px;
     padding-bottom: 60px;
@@ -10,7 +25,7 @@
   display: flex;
   flex-direction: column;
 
-  border-bottom: 1px solid #e1e1e1;
+  //   border-bottom: 1px solid #e1e1e1;
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
@@ -152,6 +167,9 @@
 }
 
 .footer__copy {
+  // 16:35
+  border-top: 1px solid #e1e1e1;
+
   text-align: center;
   font-size: 14px;
   line-height: 152%;
