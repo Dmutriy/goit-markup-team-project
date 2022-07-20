@@ -192,7 +192,7 @@
 
 .scroll-up:hover .arrow-top {
   transform: fill var(--transition-hover);
-  // fill: var(--color-text-white);
+  fill: var(--color-text-white);
   &:hover {
     fill: var(--color-text-pink);
   }
